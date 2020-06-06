@@ -1,0 +1,515 @@
+i<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>welcome to Little Angels` Academy</title>
+</head>
+<body style="background-color: aliceblue;">
+<div class="head" style="background-color: darkblue; max-width: 2000px; ">
+  <div class="nav justify-content-center">
+  
+
+  <!-- Image and text -->
+
+  <a class="navbar-brand" href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+    <img src="data:image/jpeg;base64,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
+    " 
+    width="100" height="100" class="d-inline-block align-top" alt="" loading="lazy">
+
+  <b style="color: white; font-size: 35px; font-style: italic;">Little Angels` Academy</b>
+  
+</a>
+
+<ul class="nav justify-content-center " >
+        <li class="nav-item">
+          <a class="nav-link active"  href="https://www.facebook.com/littleangelsacademys/?ref=page_internal" style="color: white;"><b>
+          Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/littleangelsacademys/about/?ref=page_internal" style="color: white;"><b>About</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="https://www.facebook.com/littleangelsacademys/photos/?ref=page_internal"style="color: white;"><b>Photos</b></a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/littleangelsacademys/?ref=page_internal"style="color: white;"><b>Contact us</b></a>
+        </li>
+        <div class="nav justify-content-">
+        <div class="container" style="padding-bottom: 10px;">
+          
+          <h6 style="color: white;"><b>Follow us</b></h6>
+        <a class="navbar-brand" href="https://www.facebook.com/littleangelsacademys/">
+          <img src="https://www.facebook.com/images/fb_icon_325x325.png" width="20" height="20" alt="" loading="lazy">
+        </a>
+        <a class="navbar-brand" href="https://www.facebook.com/littleangelsacademys/app/212104595551052/?ref=page_internal">
+          <img src="https://img.favpng.com/19/24/17/youtube-computer-icons-logo-clip-art-png-favpng-cG5u6dnYwAKnDsJM6t0fWZHxh.jpg" width="20" height="20" alt="" loading="lazy">
+        </a>
+        <a class="navbar-brand" href="https://www.facebook.com/littleangelsacademys/app/103946966394976/?ref=page_internal">
+          <img src="https://pngimage.net/wp-content/uploads/2018/06/white-twitter-logo-png-6.png" width="20" height="20" alt="" loading="lazy">
+        </a>
+      </div>
+      </div>
+      </ul>
+
+</div>
+</div>
+</div>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img width="500px" height="800px" style="max-width: 2000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/101089536_1582924678551795_2462417626832306176_o.jpg?_nc_cat=105&_nc_sid=8024bb&_nc_eui2=AeHlg_ZYnjrTFidW9C1lcQ5vENIBhN4K6NsQ0gGE3gro2_biC98ToqGy87f7nMduNbowiNulh-0vrGizF_lEpNGw&_nc_ohc=lBhGtHVk3IYAX-alI18&_nc_ht=scontent.fkhi2-1.fna&oh=df7985b0a16c3c2649a622bc2357859c&oe=5EFA6A44" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img width="500px" height="800px" style="max-width: 2000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/93776308_1546332772210986_6477696974639333376_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_eui2=AeFpj3UHBQi3SD8kv-9OAie0_MTYUo429qv8xNhSjjb2q4Oe5n3nxImUNVNYaCOKTt_lm6WUjynKHQ9oqjDTeY1A&_nc_ohc=jG3xSpqwBgIAX_0FPv-&_nc_ht=scontent.fkhi2-1.fna&oh=7e892fe1debb43292ae5a2b81e1eb4bf&oe=5EFDA96B" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img width="500px" height="800px" style="max-width: 2000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/86853670_1494335904077340_6035874998864838656_o.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_eui2=AeGSfTpw-pISXqlUjkk95pvFjyMzhDMduS-PIzOEMx25LxafZDjg4Q3GvByJrTyovpDxIWyqrbXO0UBHx9Ky6B06&_nc_ohc=NBtg1DMMBi4AX9uZP7y&_nc_ht=scontent.fkhi2-1.fna&oh=5dd3b31c7d1730e0b1e28b52a8c0f7a7&oe=5EFD1A3C" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img width="500px" height="800px" style="max-width: 2000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/83102826_1476336179210646_7749386355183976448_o.jpg?_nc_cat=101&_nc_sid=8024bb&_nc_eui2=AeEvJYIjU4DKsm4y1wVcfSU0Fed_RxdzfhsV539HF3N-G-FH9CR00xp6GtwFXUdBim23mIRKtjf7rDnrRjU1oH4W&_nc_ohc=aMQoBf38alQAX9RovTi&_nc_ht=scontent.fkhi2-1.fna&oh=7de882719e74d86ee7b86dc26eb9fbd5&oe=5EFA912A" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img width="500px" height="800px" style="max-width: 2000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/84561536_1481133295397601_6488933025697497088_o.png?_nc_cat=110&_nc_sid=8024bb&_nc_eui2=AeEya1UxMoyUnC6mgUx5J_hk1jb8mJrwxkPWNvyYmvDGQ8hO7arW-smvAZOa_lE0fR8QoigJOGLEg6RsBaMw-c7J&_nc_ohc=t73Gf7kd7UAAX89yAhs&_nc_ht=scontent.fkhi2-1.fna&oh=a71ef203b56404e28e6bb412f36fe8ee&oe=5EFDFC6A" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img width="500px" height="800px" style="max-width: 2000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/54522350_1213051928872407_1160385041075798016_o.jpg?_nc_cat=110&_nc_sid=110474&_nc_eui2=AeEVDuMoiXDHbeLiiYlRKnE4eRbicU4CKUZ5FuJxTgIpRm-7HebRfzoY6Sfb8bwVNqXJgFonh7tEx7UaIEAmMUev&_nc_ohc=247Miv9BX5gAX-1m_FI&_nc_ht=scontent.fkhi2-1.fna&oh=8dca22116418d04d9cd631f073ecb259&oe=5EFC0A87" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img width="500px" height="800px" style="max-width: 2000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/101206370_1582924601885136_290972923223605248_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_eui2=AeHRnAY1IlGZ45grM7IOhnVSCG72PwMCIm0IbvY_AwIibUPjSb0nnUoZ0ZR6TElJyJq0Y-fQxQzl0HYYuZB3fg_u&_nc_ohc=IrE_JBW5G0MAX_-ZF2-&_nc_ht=scontent.fkhi2-1.fna&oh=13758cc1e967552ae5713caf22eb013b&oe=5EFC8F54" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+<marquee  style=" font-style: italic; background-color: goldenrod; color: darkblue; width: 100%;    height: 100px; padding: 10px; font-size: 50PX"  direction="left" >ADMISSIONS OPEN 2020-21 
+
+</marquee>
+
+<br>
+ <br>
+ <div class="container">
+   <div class="row">
+<div class="media">
+  <img width="300px" height="300px" style="max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/84352749_1480182718825992_1000314371617849344_n.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_eui2=AeFads4bhynkHV5lmY6vCxsdowMtAVnMYZKjAy0BWcxhkkDrMAcJX2OagThsydQykaqr_uhi-5N_2d26HR_KeirE&_nc_ohc=smBK7XC-TLoAX8_dQwU&_nc_ht=scontent.fkhi2-1.fna&oh=1d438af803424f011167faaf6d81451d&oe=5EFEAAC4" class="mr-3" alt="...">
+  <div class="media-body">
+   <h1 class="mt-0" style="font-size: 40px; color: goldenrod; font-family:Verdana, Geneva, Tahoma, sans-serif;">INTRO <font color="darkblue">DUCTION</font> </h1><br>
+
+  LITTLE ANGELS’ ACADEMY was established in 2012 by Mr. Rizwan Zindani. Basically, the main idea for the school establishment came to Mr. Farooq Zindani, the father of Mr. Rizwan Zindani.  <br> To make his father idea into reality Mr. Rizwan zindani open the school. Having the motto of “Ration the society in the emotional state of generosity” from which we can provide the moral quality of education. <br> Our essential view is what we build is must be something different from the others. We predict that one day our students will be capable to invent a priceless involvement to both our civilization & our nation. 
+   </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+
+    <h1 class="mt-0" style="font-size: 40px; color: goldenrod; font-family:Verdana, Geneva, Tahoma, sans-serif;">STUDENTS` <font color="darkblue">DEVELOPMENT</font> </h1> <br>
+    <div class="card-deck">
+      <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+      <div  style="box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.2) ; height: 350px;" class="card">
+        <img height="350px" src="https://s3-us-west-1.amazonaws.com/acropolis-wp-content-uploads/kids-playing-building-blocks.jpg" class="card-img-top" alt="...">
+      
+        <div class="card-body">
+          <div class="nav justify-content-center">
+          <h3 class="card-title"><font style="color: darkblue;">Activities</font></h3>
+        </div>
+      </a>    
+        </div>
+      </div>
+      <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+      <div style="box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.2) ; height: 350px;" class="card">
+        <img height="350px" src="https://clevertykes.com/wp-content/uploads/2016/07/Kids-in-class-750x500.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="nav justify-content-center">
+          <h3 class="card-title"><font style="color: darkblue;">Educational Programes</font></h3>
+          
+        </div>
+        </a>
+
+        </div>
+      </div>
+      <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+      <div style="box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.2) ; height: 350px;" class="card">
+        
+        <img height="350px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTcs9QQ8Y-IP4RpLBfUAwgyipIbS33p9vGBiEBwLAoBg1eH4Ml-&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="nav justify-content-center">
+          <h3 class="card-title"><font style="color: darkblue;">Career & Services</font></h3>
+        
+      </div>
+      </a>
+
+        </div>
+      </div>
+    </div>
+<br> <br> <br> <br>
+    <div class="card-deck">
+      <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+      <div  style="box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.2) ; height: 350px;" class="card">
+        <img height="350px" src="https://uci.edu/community/img/camp-cosmos-1024x683.jpg" class="card-img-top" alt="...">
+      
+        <div class="card-body">
+          <div class="nav justify-content-center">
+          <h3 class="card-title"><font style="color: darkblue;">Youth Programes</font></h3>
+        </div>
+      </a>    
+        </div>
+      </div>
+      <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+      <div style="box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.2) ; height: 350px;" class="card">
+        <img height="350px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLUKlPeWmK0MSQa7oHGt6D6V8rG1ULHLMEMsTyjNVOlMb8wg_1&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="nav justify-content-center">
+          <h3 class="card-title"><font style="color: darkblue;">Skills Development Programes</font></h3>
+          
+        </div>
+        </a>
+
+        </div>
+      </div>
+      <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+      <div style="box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.2) ; height: 350px;" class="card">
+        
+        <img height="350px" src="https://media.postgrad.com/cms/titletile/Exams_LLM.jpg.640x480_q85_crop-center.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="nav justify-content-center">
+          <h3 style="color: darkblue;" class="card-title">Exams & Assessments</h3>
+        
+      </div>
+      </a>
+       </div>
+      </div>
+    </div>
+   </div>
+</div>
+<br><br><br><br>  
+<div class="container">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="height: 300px; background-color: goldenrod;">
+      <div class="card-body">
+        <div class="nav justify-content-center">
+        <h2 class="card-title" style="color: darkblue;" >CAPMUS 1 </h2>
+      </div>
+        <p class="card-text" style="font-size: 62px; color: darkblue;">PLAYGROUP TO V</p>
+        <div class="nav justify-content-center">
+        <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal" class="btn btn-primary" style="background-color: darkblue;
+        ">FOR OTHER DETAILS</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card" style="height: 300px; background-color:darkblue;">
+      <div class="card-body">
+        <div class="nav justify-content-center">
+        <h2 class="card-title" style="color: goldenrod;">CAMPUS 2</h2>
+      
+        <p class="card-text" style="font-size: 75px; color: goldenrod; ">I TO MATRIC</p>
+        </div>
+        <div class="nav justify-content-center">
+        <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal" class="btn btn-primary" style="background-color: goldenrod;
+        ">FOR OTHER DETAILS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<br><br>
+<div class="container">
+<div class="row">
+  <h1 class="mt-0" style="font-size: 40px; color: goldenrod; font-family:Verdana, Geneva, Tahoma, sans-serif;">RECENT <font color="darkblue">UPDATES</font> </h1>
+  
+</div>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img  style="width: 500px; height: 550px; border:2px solid whitesmoke; max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/s960x960/101969834_1585794784931451_5867591183705833472_o.jpg?_nc_cat=111&_nc_sid=8024bb&_nc_eui2=AeHNQDaEbIstYybde8ARTFn4DlPw_Up_rjsOU_D9Sn-uO0HJR_ya_YGjGUAyo_KxogyT8eVySxsnWWPI5FQYlDJC&_nc_ohc=G1HAv6ujOQYAX_0XQLo&_nc_ht=scontent.fkhi2-1.fna&_nc_tp=7&oh=3dad35d9c2b3a33b49ef8e9e9bd0b6f1&oe=5EFDB491" alt="">
+        </div>
+       
+      <div class="carousel-item ">
+ <img  style="width: 500px; height: 550px; border:2px solid whitesmoke; max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/s960x960/100802145_1582922918551971_2931299455644729344_o.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_eui2=AeFvmoF7FzxbZREcB0fwF7YLzZ0xAqA2FknNnTECoDYWSW6jX1vwh-IgIXvhIpoHH-jXHmGl5YdwKcJc8Tnp_pjL&_nc_ohc=-2Xb0ZoUZB4AX8Hti3c&_nc_ht=scontent.fkhi2-1.fna&_nc_tp=7&oh=28b72385f0c6c914e7ac25b8d709b3c4&oe=5EFE025E" alt="">
+ </div>
+ <div class="carousel-item">
+  <img  style="width: 500px; height: 550px; border:2px solid whitesmoke; max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-0/c2.0.200.200a/p200x200/101037691_1582924431885153_8117791804973121536_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_eui2=AeFfcTa95EclwZ45bCfy6lmWg1YT8oWsZAmDVhPyhaxkCTIzMcSZmNgloy-owvh12OfPS9QnOe7qhcBVyw7KJfX2&_nc_ohc=oebqEDVq3B4AX-tQjvm&_nc_ht=scontent.fkhi2-1.fna&oh=9390dc3868f49371bf8cec42d80bc6ea&oe=5EFD6C1D" alt="">
+</div>
+<div class="carousel-item">
+  <img style="width: 500px; height: 550px; border:2px solid whitesmoke; max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-0/c0.22.200.200a/p200x200/99439842_1582447965266133_683165594115112960_o.jpg?_nc_cat=104&_nc_sid=730e14&_nc_eui2=AeFfxp4pbV1BhJgTsicrNKHN1FF6Xm690vzUUXpebr3S_DoFZfq2DnSFEiWYH7eTnxbEQMw3ASUewCwLPbR0jfbZ&_nc_ohc=luNVrtxyRg0AX_D4JX2&_nc_ht=scontent.fkhi2-1.fna&oh=ff95f855a8ae3bb87cef78c3707d6f80&oe=5EFF7F5C" alt="">
+</div>
+<div class="carousel-item">
+  <img style="width: 500px; height: 550px; border:2px solid whitesmoke; max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/93136651_1540558439455086_6707687512652906496_o.jpg?_nc_cat=106&_nc_sid=8024bb&_nc_eui2=AeGToLrnqfEWyCKRBNd4YMZRo3d9ATp2uJmjd30BOna4mcSNj-msvwRX7s1QdQwrLk47Mm5r9rn22LxMCr3S389C&_nc_ohc=-haMoB3nlNIAX_7ygQP&_nc_ht=scontent.fkhi2-1.fna&oh=bbc1a1a3bf6b4ae21ac82c6217e2efbd&oe=5EFDCCC1" alt="">
+</div>
+<div class="carousel-item">
+  <img style="width: 500px; height: 550px; border:2px solid whitesmoke; max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-9/93173449_1539791399531790_8299710681008046080_o.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_eui2=AeExCquaRrbF2BSky0qahLVGBr4oiCc2eOcGviiIJzZ45y7fYS0KAfilt3jEZhGXRvKhPr3MUvcWPCtj7E073snZ&_nc_ohc=YUf9dP3l3O8AX9SJzzF&_nc_ht=scontent.fkhi2-1.fna&oh=3cc92358d85490e45d39853b07fe4974&oe=5EFF98EA" alt="">
+</div>
+<div class="carousel-item">
+  <img style="width: 500px; height: 550px; border:2px solid whitesmoke; max-width: 1000px;" src="https://scontent.fkhi2-1.fna.fbcdn.net/v/t1.0-0/c24.0.200.200a/p200x200/96086534_1564699610374302_7544320418627190784_o.jpg?_nc_cat=111&_nc_sid=730e14&_nc_eui2=AeHPFbnVc6hxVOLDTkC246BWYelt7enJOZNh6W3t6ck5k2eLY2PWgNRsNipAj5rxoLocH0joYhZC46wcdvs4spoE&_nc_ohc=4OaW-yMMNKgAX9AboAw&_nc_ht=scontent.fkhi2-1.fna&oh=8c6eca88f8cd22fe6677b435b62ba986&oe=5EFE581E" alt="">
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div></div>  
+</div>
+
+<div class="col mb-4">
+  <h1 class="mt-0" style="font-size: 40px; color: goldenrod; font-family:Verdana, Geneva, Tahoma, sans-serif;">OUR <font color="darkblue">MESSAGE</font> </h1>
+  <MARQUEE onmouseover="stop()" onmouseout="start()" behavior="scroll" direction="up" width="100%">
+    
+LITTLE ANGELS' ACADEMY· <br>
+ 
+Welcome To Little Angels Academy
+Provide High Standard of Education
+I am excited and honoured to be Director of Little Angels’ Academy . I believe that learning is based on mutual respect between staff, students and parents within an inclusive community where everyone is a valued member of the school community. Promotion of high expectations and a love of learning are engendered by an inquisitive, investigative, questioning curiosity that will be developed in students across all key stages and in all subjects in our school. In choosing Little Angels’ Academy you have taken the first step on an exciting, aspirational and fulfilling journey for your child. Every student is valued and special in our school where we all strive towards academic excellence.
+We encourage parents, families and staff to work closely together and expect parents to support our high expectations by ensuring their child’s punctuality, daily attendance, observance of full uniform and commitment to homework.
+Thank you to all students, staff and parents who have worked hard to make the school a success so far. I look forward to working with you in the coming years. <br>
+Mr.Rizwan Zindani 
+    
+    </MARQUEE>
+  </div>  
+</div>
+</div>
+</div>
+</div>
+<div class="container"  >
+<img width="1120px" height="350px" src="https://external.fkhi2-1.fna.fbcdn.net/map_tile.php?region=PK&v=1021&osm_provider=2&x=22487&y=14040&z=15&language=en_US" alt="" 
+<<div class="card text-center">
+  <div class="card-body" >
+    <h5 class="card-title">Little Angels’Academy</h5>
+    <p class="card-text">	C-71 Block 4,F B Area karimabad karachi, Karachi, Pakistan-75950</p>
+    <a class="btn btn-primary" style="background-color: white; color: royalblue; border: white; font-size: medium;" href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&rtp=%7Epos.24.919822078284_67.053519487381_Little+Angels%27+Academy&cp=24.919822078284%7E67.053519487381&lvl=16&sty=r&rtop=0%7E0%7E0%7E&mode=D&FORM=FBKPL6&mkt=en-US&fbclid=IwAR1YZyHNjTenYDOZD7KlZP6EBd514lTj8Si36UwX1T0V8I0CtsSD68Tjufg" role="button">Get Direction</a>
+  </div>
+</div>
+<div class="container">
+  <div class="contact" style="  height: 400px; ">
+    <div class="container">
+      <div class="nav justify-content-left">
+      <h1 class="mt-0" style="font-size: 40px; color: darkblue; font-family:Verdana, Geneva, Tahoma, sans-serif;">FOR OTHER DETAILS  </h1>
+    </div>
+    <div class="card text-center" style="width: 325px; height: 300px; float:right; background-color: darkblue; color: white; max-width: 2000px;">
+      <div class="card-body">
+        <h3 class="card-title">ENROLL YOUR CHILD TODAY</h3>
+        <br><br><br><br>
+        <p class="card-text">
+          <a href="https://www.facebook.com/littleangelsacademys/?ref=page_internal">
+          <button type="button" class="btn btn-primary btn-lg" style="color:white; background-color:darkred;">Register Now</button>
+        </a>
+        </p>
+        
+      </div>
+    </div>
+    
+      <br><br>
+        
+
+      <ul style="color: darkblue; font-size: 20px;">
+        <il>Call: (021) 36805002  
+        </il><br>
+        
+        <il>CELL: 92-324-3429744</il><br>
+        <il>C-71 Block 4,F B Area karimabad karachi <br>
+          Karachi, Pakistan</il><br>
+        <il>m.me/littleanglsacademys</il><br>
+        <il>info@littleangelsacademys.com</il><br>
+        
+      </ul>
+
+    </div>
+
+      </div>
+    </div>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
